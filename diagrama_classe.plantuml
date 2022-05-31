@@ -31,7 +31,7 @@ Class Vacina{
     - tipo: String
     - dose: Number
     - agenda: Agenda
-    + constructor(nomeVacina, tipo, dose, agenda)
+    + constructor(id_vacina, nomeVacina, tipo, dose, agenda)
 }
 
 class Pessoa{
