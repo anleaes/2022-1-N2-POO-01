@@ -35,10 +35,10 @@ Class Vacina{
 }
 
 class Pessoa{
-    - nomePessoa: String
+    - nome: String
     - idade: Number
     - telefone: String
-    + constructor(nomePessoa, idade, telefone)
+    + constructor(nome, idade, telefone)
 }
 
 class Cadastro {
