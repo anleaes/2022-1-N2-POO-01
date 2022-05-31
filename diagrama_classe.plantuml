@@ -10,4 +10,12 @@ Class Vacina{
     + constructor(nomeVacina, tipo, dose)
 }
 
+class Pessoa{
+    - nomePessoa: String
+    - idade: Number
+    - telefone: String
+    + constructor(nomePessoa, idade, telefone)
+}
+
+
 @enduml
