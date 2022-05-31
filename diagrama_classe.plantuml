@@ -25,6 +25,7 @@ class Agenda{
 
 
 Class Vacina{
+    - id_vacina: Integer
     - nomeVacina: String
     - tipo: String
     - dose: Number
