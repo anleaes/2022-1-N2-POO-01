@@ -16,6 +16,13 @@ class Sala{
     + constructor(numero_sala, andar)
 }
 
+class Agenda{
+    - hora: String
+    - sala: Sala
+    - vacina: Vacina
+    + constructor(hora, sala, vacina)
+}
+
 
 Class Vacina{
     - nomeVacina: String
