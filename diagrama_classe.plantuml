@@ -2,6 +2,15 @@
 
 title Diagrama de classes Sistema Unificado de Vacinação
 
+class Unidade_saude{
+    - nome : String
+    - endereco: String
+    - telefone: String
+    - cnpj: String
+    + constructor(nome, endereco, telefone, cnpj)
+}
+
+
 Class Vacina{
     - nomeVacina: String
     - tipo: String
@@ -31,6 +40,7 @@ class Enfermeiro {
     - agenda: Agenda
     + constructor(registro, pessoa, agenda )
 }
+
 
 
 @enduml
