@@ -7,7 +7,7 @@ Class Vacina{
     - tipo: String
     - dose: Number
     - agenda: Agenda
-    + constructor(nomeVacina, tipo, dose)
+    + constructor(nomeVacina, tipo, dose, agenda)
 }
 
 class Pessoa{
@@ -22,7 +22,7 @@ class Cadastro {
     - email: String
     - endereco: String
     - pessoa: Pessoa
-    + constructor(cpf, email, endereco)
+    + constructor(cpf, email, endereco, pessoa)
 }
 
 class Enfermeiro {
