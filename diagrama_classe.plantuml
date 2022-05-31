@@ -10,6 +10,12 @@ class Unidade_saude{
     + constructor(nome, endereco, telefone, cnpj)
 }
 
+class Sala{
+    - numero_sala: Integer
+    - andar: Integer
+    + constructor(numero_sala, andar)
+}
+
 
 Class Vacina{
     - nomeVacina: String
