@@ -17,5 +17,13 @@ class Pessoa{
     + constructor(nomePessoa, idade, telefone)
 }
 
+class Cadastro {
+    - cpf: String
+    - email: String
+    - endereco: String
+    - pessoa: Pessoa
+    + constructor(cpf, email, endereco)
+}
+
 
 @enduml
