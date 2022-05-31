@@ -13,7 +13,8 @@ class Unidade_saude{
 class Sala{
     - numero_sala: Integer
     - andar: Integer
-    + constructor(numero_sala, andar)
+    - unidade_saude: Unidade_saude 
+    + constructor(numero_sala, andar, unidade_saude)
 }
 
 class Agenda{
