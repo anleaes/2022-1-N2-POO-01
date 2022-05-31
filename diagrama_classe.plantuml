@@ -1,0 +1,13 @@
+@startuml
+
+title Diagrama de classes Sistema Unificado de Vacinação
+
+Class Vacina{
+    - nomeVacina: String
+    - tipo: String
+    - dose: Number
+    - agenda: Agenda
+    + constructor(nomeVacina, tipo, dose)
+}
+
+@enduml
