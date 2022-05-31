@@ -25,5 +25,12 @@ class Cadastro {
     + constructor(cpf, email, endereco)
 }
 
+class Enfermeiro {
+    - registro: String
+    - pessoa: Pessoa
+    - agenda: Agenda
+    + constructor(registro, pessoa, agenda )
+}
+
 
 @enduml
