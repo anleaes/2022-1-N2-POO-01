@@ -58,11 +58,11 @@ class Enfermeiro {
 }
 
 class MarcacaoVacina{
-    - Cadastro: Cadastro
+    - CadastroPaciente: CadastroPaciente
     - Agenda: Agenda
-    + construtor(Cadastro, Agenda)
+    + construtor(CadastroPaciente, Agenda)
 }
-Pessoa <|--> Cadastro
+Pessoa <|--> CadastroPaciente
 Pessoa <|--> Enfermeiro
 Unidade_saude *--> Sala
 Sala *--> Agenda
