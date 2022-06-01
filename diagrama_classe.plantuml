@@ -2,19 +2,43 @@
 
 title Diagrama de classes Sistema Unificado de Vacinação
 
+class Unidade_saude{
+    - nome : String
+    - endereco: String
+    - telefone: String
+    - cnpj: String
+    + constructor(nome, endereco, telefone, cnpj)
+}
+
+class Sala{
+    - numero_sala: Integer
+    - andar: Integer
+    - unidade_saude: Unidade_saude 
+    + constructor(numero_sala, andar, unidade_saude)
+}
+
+class Agenda{
+    - hora: String
+    - sala: Sala
+    - vacina: Vacina
+    + constructor(hora, sala, vacina)
+}
+
+
 Class Vacina{
+    - id_vacina: Integer
     - nomeVacina: String
     - tipo: String
     - dose: Number
     - agenda: Agenda
-    + constructor(nomeVacina, tipo, dose, agenda)
+    + constructor(id_vacina, nomeVacina, tipo, dose, agenda)
 }
 
 class Pessoa{
-    - nomePessoa: String
+    - nome: String
     - idade: Number
     - telefone: String
-    + constructor(nomePessoa, idade, telefone)
+    + constructor(nome, idade, telefone)
 }
 
 class Cadastro {
@@ -31,6 +55,7 @@ class Enfermeiro {
     - agenda: Agenda
     + constructor(registro, pessoa, agenda )
 }
+
 
 
 @enduml
