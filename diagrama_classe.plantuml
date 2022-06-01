@@ -42,7 +42,7 @@ class Pessoa{
     + constructor(nome, idade, telefone)
 }
 
-class Cadastro {
+class CadastroPaciente {
     - cpf: String
     - email: String
     - endereco: String
@@ -57,11 +57,20 @@ class Enfermeiro {
     + constructor(registro, pessoa, agenda )
 }
 
-Pessoa <|--> Cadastro
+class MarcacaoVacina{
+    - id_marcacao: Integer
+    - CadastroPaciente: CadastroPaciente
+    - Agenda: Agenda
+    + construtor(id_marcacao, CadastroPaciente, Agenda)
+}
+
+Pessoa <|--> CadastroPaciente
 Pessoa <|--> Enfermeiro
 Unidade_saude *--> Sala
 Sala *--> Agenda
 Vacina *--> Agenda
 Agenda *--> Enfermeiro
+CadastroPaciente *--> MarcacaoVacina
+Agenda *--> MarcacaoVacina
 
 @enduml
