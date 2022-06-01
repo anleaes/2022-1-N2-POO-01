@@ -30,8 +30,9 @@ Class Vacina{
     - nomeVacina: String
     - tipo: String
     - dose: Number
+    - disponibilidade: boolean
     - agenda: Agenda
-    + constructor(id_vacina, nomeVacina, tipo, dose, agenda)
+    + constructor(id_vacina, nomeVacina, tipo, dose, disponibilidade, agenda)
 }
 
 class Pessoa{
