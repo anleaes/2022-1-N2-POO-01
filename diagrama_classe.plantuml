@@ -56,6 +56,11 @@ class Enfermeiro {
     + constructor(registro, pessoa, agenda )
 }
 
-
+Pessoa <|--> Cadastro
+Pessoa <|--> Enfermeiro
+Unidade_saude *--> Sala
+Sala *--> Agenda
+Vacina *--> Agenda
+Agenda *--> Enfermeiro
 
 @enduml
