@@ -42,7 +42,7 @@ class Pessoa{
     + constructor(nome, idade, telefone)
 }
 
-class Cadastro {
+class CadastroPaciente {
     - cpf: String
     - email: String
     - endereco: String
