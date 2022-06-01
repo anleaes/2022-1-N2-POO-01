@@ -58,15 +58,19 @@ class Enfermeiro {
 }
 
 class MarcacaoVacina{
+    - id_marcacao: Integer
     - CadastroPaciente: CadastroPaciente
     - Agenda: Agenda
-    + construtor(CadastroPaciente, Agenda)
+    + construtor(id_marcacao, CadastroPaciente, Agenda)
 }
+
 Pessoa <|--> CadastroPaciente
 Pessoa <|--> Enfermeiro
 Unidade_saude *--> Sala
 Sala *--> Agenda
 Vacina *--> Agenda
 Agenda *--> Enfermeiro
+CadastroPaciente *--> MarcacaoVacina
+Agenda *--> MarcacaoVacina
 
 @enduml
