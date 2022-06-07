@@ -24,6 +24,8 @@ class Agenda{
     - sala: Sala
     - vacina: Vacina
     + constructor(hora, sala, vacina)
+    + verificar_agenda(hora, sala)
+    + agendar_vacina(vacina)
 }
 
 
