@@ -28,4 +28,7 @@ class Vacina:
     def set_tipo(self, tipo):
         self._tipo = tipo
 
+    def set_dose(self, dose):
+        self._dose = dose
+
 v1 = Vacina(1, "Vacina Pasrao", "viral", "dose unica", True)
