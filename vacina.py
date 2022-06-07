@@ -6,12 +6,32 @@ class Vacina:
         self._dose = dose
         self._disponibilidade = disponibilidade
     
-    @property
+    
     def get_nome_vacina(self):
         return self._nomeVacina
 
-    @property
     def set_nome_vacina(self, nomeVacina):
         self._nomeVacina = nomeVacina
+
+    def get_tipo(self):
+        return self._tipo
+
+    def get_dose(self):
+        return self._dose
+
+    def get_disponibilidade(self):
+        return self._disponibilidade
+
+    def set_nome_vacina(self, nomeVacina):
+        self._nomeVacina = nomeVacina
+
+    def set_tipo(self, tipo):
+        self._tipo = tipo
+
+    def set_dose(self, dose):
+        self._dose = dose
+
+    def set_disponibilidade(self, disponibilidade):
+        self._disponibilidade = disponibilidade
 
 v1 = Vacina(1, "Vacina Pasrao", "viral", "dose unica", True)

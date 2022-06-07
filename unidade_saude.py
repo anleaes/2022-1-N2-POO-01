@@ -20,5 +20,8 @@ class UnidadeSaude():
     def set_nome(self, nome):
         self._nome = nome
 
+    def set_telefone(self, telefone):
+        self._telefone = telefone
+
 unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
 
