@@ -13,7 +13,3 @@ class Enfermeiro(Pessoa):
 
 
 enf= Enfermeiro(102, "thony", 28, "980546478")
-print(enf)
-print(enf.get_registro())
-enf.set_registro(104)
-print(enf.get_registro())
