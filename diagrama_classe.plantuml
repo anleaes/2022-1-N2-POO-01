@@ -56,8 +56,7 @@ class CadastroPaciente {
 class Enfermeiro {
     - registro: String
     - pessoa: Pessoa
-    - agenda: Agenda
-    + constructor(registro, pessoa, agenda )
+    + constructor(registro, pessoa)
 }
 
 class MarcacaoVacina{
