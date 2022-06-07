@@ -1,4 +1,4 @@
-class vacina:
+class Vacina:
     def __init__(self, id_vacina, nomeVacina, tipo, dose, disponibilidade):
         self._id_vacina = id_vacina
         self._nomeVacina = nomeVacina
