@@ -67,6 +67,8 @@ class Enfermeiro {
     - registro: String
     - pessoa: Pessoa
     + constructor(registro, pessoa)
+    + get_registro(registro)
+    + set_registro(registro)
 }
 
 class MarcacaoVacina{
