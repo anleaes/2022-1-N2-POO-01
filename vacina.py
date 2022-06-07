@@ -22,4 +22,7 @@ class Vacina:
     def get_disponibilidade(self):
         return self._disponibilidade
 
+    def set_nome_vacina(self, nomeVacina):
+        self._nomeVacina = nomeVacina
+
 v1 = Vacina(1, "Vacina Pasrao", "viral", "dose unica", True)
