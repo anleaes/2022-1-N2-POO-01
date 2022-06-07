@@ -34,4 +34,3 @@ class Vacina:
     def set_disponibilidade(self, disponibilidade):
         self._disponibilidade = disponibilidade
 
-v1 = Vacina(1, "Vacina Pasrao", "viral", "dose unica", True)
