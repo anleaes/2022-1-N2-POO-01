@@ -22,6 +22,9 @@ class CadastroPaciente(Pessoa):
     def set_email(self, email):
         self._email = email
 
+    def set_endereco(self, endereco):
+        self._endereco = endereco
+
 
 
 pc = CadastroPaciente(1234, "Rua tal, 122 ", "teste@teste.com", "thony", 28, "980631415")
@@ -31,5 +34,12 @@ print(pc.get_endereco())
 print('-----------------------')
 print('')
 pc.set_email('email@email.com')
+print(pc.get_email())
+print(pc.get_endereco())
+
+print('-----------------------')
+print('')
+
+pc.set_endereco('Rua ali, 211')
 print(pc.get_email())
 print(pc.get_endereco())
