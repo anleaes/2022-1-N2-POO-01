@@ -16,4 +16,7 @@ class Vacina:
     def get_tipo(self):
         return self._tipo
 
+    def get_dose(self):
+        return self._dose
+
 v1 = Vacina(1, "Vacina Pasrao", "viral", "dose unica", True)
