@@ -49,8 +49,14 @@ Class Vacina{
     - disponibilidade: boolean
     - agenda: Agenda
     + constructor(id_vacina, nomeVacina, tipo, dose, disponibilidade, agenda)
-    + get_nome(self)
-    + set_nomeVacina(nomeVacina)
+    + get_nome_vacina(nomeVacina)
+    + set_nome_vacina(nomeVacina)
+    + get_tipo(tipo)
+    + get_dose(dose)
+    + get_disponibilidade(disponibilidade)
+    + set_tipo(tipo)
+    + set_dose(dose)
+    + set_disponibilidade(disponibilidade)
 }
 
 class Pessoa{
