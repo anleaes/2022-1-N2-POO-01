@@ -17,6 +17,9 @@ class Sala:
     def set_numeroSala(self, numero_sala):
         self._numero_sala = numero_sala
 
+    def set_andar(self, andar):
+        self._andar = andar
+
 sala1 = Sala(1,2, "unidade1")
 print(sala1.get_numeroSala())
 print(sala1.get_andar())
@@ -26,4 +29,6 @@ print('------------------------')
 print('')
 
 sala1.set_numeroSala(105)
+sala1.set_andar(7)
 print(sala1.get_numeroSala())
+print(sala1.get_andar())
