@@ -7,7 +7,7 @@ class vacina:
     
     @property
     def get_nome_vacina(self):
-        return self._nomeVacina = nomeVacina
+        return self._nomeVacina
 
     @property
     def set_nome_vacina(self):
