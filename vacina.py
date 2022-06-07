@@ -4,6 +4,7 @@ class Vacina:
         self._nomeVacina = nomeVacina
         self._tipo = tipo
         self._dose = dose
+        self._disponibilidade = disponibilidade
     
     @property
     def get_nome_vacina(self):
@@ -12,4 +13,5 @@ class Vacina:
     @property
     def set_nome_vacina(self, nomeVacina):
         self._nomeVacina = nomeVacina
-    
+
+v1 = Vacina(1, "Vacina Pasrao", "viral", "dose unica", True)
