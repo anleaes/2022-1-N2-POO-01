@@ -15,4 +15,3 @@ class CadastroPaciente(Pessoa):
 
 
 pc = CadastroPaciente(1234, "poa, ", "teste", "thony", 28, "980631415")
-pc.validarCadastro(32)
