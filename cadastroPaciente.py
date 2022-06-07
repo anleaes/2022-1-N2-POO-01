@@ -7,7 +7,7 @@ class CadastroPaciente(Pessoa):
                 self._email = email
                 self._endereco = endereco
 
-        def validarCadastro(self, cpf, ):  
+        def validarCadastro(self, cpf):  
             if self._cpf == NULL and self._pessoa == NULL:
                 print("Falha no cadastro. Por favor preencha o CPF!")
             else:
