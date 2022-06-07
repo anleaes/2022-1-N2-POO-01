@@ -8,3 +8,9 @@ class MarcacaoVacina(CadastroPaciente, Agenda, Vacina):
         Agenda.__init__(self, hora, sala, Vacina)
         Vacina.__init__(self, id_vacina,nomeVacina,tipo, dose, disponibilidade, Agenda)
         self._idMarcacao = idMarcacao
+
+    def get_id(self):
+        return self._idMarcacao
+
+    def set_id(self, idMarcacao):
+        self._idMarcacao = idMarcacao
