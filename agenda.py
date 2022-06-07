@@ -11,7 +11,7 @@ class Agenda(Vacina):
         print(self._hora)
         print(self._sala)
 
-    def agendarVacina(self):
+    def agendar_vacina(self):
         if self._vacina is not False:
             return print(f'Vacina {self._vacina} disponivel para o dia ...')
         else:
