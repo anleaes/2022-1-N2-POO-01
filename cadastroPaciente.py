@@ -8,7 +8,11 @@ class CadastroPaciente(Pessoa):
         self._endereco = endereco
 
     def validarCadastro(self, cpf):  
-        if self._cpf != cpf: 
+        if self._cpf != cpf : 
             print("Falha no cadastro. Por favor preencha o CPF!")
         else:
             print("Cadastro realizado com sucesso")
+
+
+pc = CadastroPaciente(1234, "poa, ", "teste", "thony", 28, "980631415")
+pc.validarCadastro(32)
