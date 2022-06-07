@@ -11,3 +11,6 @@ class MarcacaoVacina(CadastroPaciente, Agenda, Vacina):
 
     def get_id(self):
         return self._idMarcacao
+
+    def set_id(self, idMarcacao):
+        self._idMarcacao = idMarcacao
