@@ -3,4 +3,5 @@ class Pessoa:
         self._nome = nome
         self._idade = idade
         self._telefone = telefone
-    
+
+p1 = Pessoa("Marco", 25, "980465784")
