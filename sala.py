@@ -8,5 +8,13 @@ class Sala:
     def get_numeroSala(self):
         return self._numero_sala
 
+    def get_andar(self):
+        return self._andar
+
+    def get_unidadeSaude(self):
+        return self._unidade_saude
+
 sala1 = Sala(1,2, "unidade1")
 print(sala1.get_numeroSala())
+print(sala1.get_andar())
+print(sala1.get_unidadeSaude())
