@@ -8,6 +8,12 @@ class Unidade_saude{
     - telefone: String
     - cnpj: String
     + constructor(nome, endereco, telefone, cnpj)
+    + get_nome(nome)
+    + get_endereco(endereco)
+    + get_telefone(telefone)
+    + get_cnpj(cnpj)
+    + set_nome(nome)
+    + set_telefone(telefone)
 }
 
 class Sala{
@@ -15,8 +21,12 @@ class Sala{
     - andar: Integer
     - unidade_saude: Unidade_saude 
     + constructor(numero_sala, andar, unidade_saude)
-    + verificar_agenda(self)
-    + agendar_vacina(self)
+    + get_numeroSala(sala)
+    + get_andar(andar)
+    + get_unidadeSaude(unidade_saude)
+    + set_numeroSala(numero_sala)
+    + set_andar(andar)
+    + set_unidadeSaude(unidade_saude)
 }
 
 class Agenda{
@@ -26,6 +36,8 @@ class Agenda{
     + constructor(hora, sala, vacina)
     + verificar_agenda(hora, sala)
     + agendar_vacina(vacina)
+    + get_horario(hora)
+    + set_horario(hora)
 }
 
 
@@ -37,8 +49,14 @@ Class Vacina{
     - disponibilidade: boolean
     - agenda: Agenda
     + constructor(id_vacina, nomeVacina, tipo, dose, disponibilidade, agenda)
-    + get_nome(self)
-    + set_nomeVacina(nomeVacina)
+    + get_nome_vacina(nomeVacina)
+    + set_nome_vacina(nomeVacina)
+    + get_tipo(tipo)
+    + get_dose(dose)
+    + get_disponibilidade(disponibilidade)
+    + set_tipo(tipo)
+    + set_dose(dose)
+    + set_disponibilidade(disponibilidade)
 }
 
 class Pessoa{
@@ -46,6 +64,12 @@ class Pessoa{
     - idade: Number
     - telefone: String
     + constructor(nome, idade, telefone)
+    + get_nome(nome)
+    + get_idade(idade)
+    + get_telefone(telefone)
+    + set_nome(nome)
+    + set_idade(idade)
+    + set_telefone(telefone)
 }
 
 class CadastroPaciente {
@@ -55,12 +79,18 @@ class CadastroPaciente {
     - pessoa: Pessoa
     + constructor(cpf, email, endereco, pessoa)
     + validarCadastro(cpf)
+    + get_email(email)
+    + get_endereco(endereco)
+    + set_email(email)
+    + set_endereco(endereco)
 }
 
 class Enfermeiro {
     - registro: String
     - pessoa: Pessoa
     + constructor(registro, pessoa)
+    + get_registro(registro)
+    + set_registro(registro)
 }
 
 class MarcacaoVacina{
@@ -68,6 +98,8 @@ class MarcacaoVacina{
     - CadastroPaciente: CadastroPaciente
     - Agenda: Agenda
     + construtor(id_marcacao, CadastroPaciente, Agenda)
+    + get_id(id_marcacao)
+    + set_id(id_marcacao)
 }
 
 Pessoa <|--> CadastroPaciente
