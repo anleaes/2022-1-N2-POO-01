@@ -3,4 +3,5 @@ class Sala:
         self._numero_sala = numero_sala
         self._andar = andar
         self._unidade_saude = unidade_saude
-        
+
+sala1 = Sala(1, 2 )
