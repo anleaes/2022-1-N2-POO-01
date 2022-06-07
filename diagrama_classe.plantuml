@@ -15,8 +15,12 @@ class Sala{
     - andar: Integer
     - unidade_saude: Unidade_saude 
     + constructor(numero_sala, andar, unidade_saude)
-    + verificar_agenda(self)
-    + agendar_vacina(self)
+    + get_numeroSala(sala)
+    + get_andar(andar)
+    + get_unidadeSaude(unidade_saude)
+    + set_numeroSala(numero_sala)
+    + set_andar(andar)
+    + set_unidadeSaude(unidade_saude)
 }
 
 class Agenda{
