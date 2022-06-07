@@ -19,3 +19,6 @@ class Agenda(Vacina):
 
     def get_horario(self):
         return self._hora
+
+    def set_horario(self, hora):
+        self._hora = hora
