@@ -20,15 +20,7 @@ class Sala:
     def set_andar(self, andar):
         self._andar = andar
 
+    def set_unidadeSaude(self, unidade_saude):
+        self._unidade_saude = unidade_saude
+
 sala1 = Sala(1,2, "unidade1")
-print(sala1.get_numeroSala())
-print(sala1.get_andar())
-print(sala1.get_unidadeSaude())
-
-print('------------------------')
-print('')
-
-sala1.set_numeroSala(105)
-sala1.set_andar(7)
-print(sala1.get_numeroSala())
-print(sala1.get_andar())
