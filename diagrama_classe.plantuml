@@ -26,6 +26,8 @@ class Agenda{
     + constructor(hora, sala, vacina)
     + verificar_agenda(hora, sala)
     + agendar_vacina(vacina)
+    + get_horario(hora)
+    + set_horario(hora)
 }
 
 
@@ -55,6 +57,10 @@ class CadastroPaciente {
     - pessoa: Pessoa
     + constructor(cpf, email, endereco, pessoa)
     + validarCadastro(cpf)
+    + get_email(email)
+    + get_endereco(endereco)
+    + set_email(email)
+    + set_endereco(endereco)
 }
 
 class Enfermeiro {
