@@ -16,6 +16,11 @@ class Pessoa:
     def set_nome(self, nome):
         self._nome = nome
 
+    def set_idade(self, idade):
+        self._idade = idade
+
+    
+
 p1 = Pessoa("Marco", 25, "980465784")
 print(p1)
 print(p1.get_nome())
@@ -27,3 +32,6 @@ print('')
 
 p1.set_nome('Thony')
 print(p1.get_nome())
+
+p1.set_idade(29)
+print(p1.get_idade())
