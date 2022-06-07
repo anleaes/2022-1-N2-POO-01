@@ -7,5 +7,9 @@ class Pessoa:
     def get_nome(self):
         return self._nome
 
+    def get_idade(self):
+        return self._idade
+
 p1 = Pessoa("Marco", 25, "980465784")
 print(p1.get_nome())
+print(p1.get_idade())
