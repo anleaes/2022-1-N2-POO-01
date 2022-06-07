@@ -5,4 +5,4 @@ class Sala:
         self._andar = andar
         self._unidade_saude = unidade_saude
 
-sala1 = Sala(1,2)
+sala1 = Sala(1,2, "unidade1")
