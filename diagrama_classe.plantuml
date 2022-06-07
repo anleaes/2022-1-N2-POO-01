@@ -1,4 +1,4 @@
-@startuml
+@startuml diagrama_classe
 
 title Diagrama de classes Sistema Unificado de Vacinação
 
@@ -15,6 +15,8 @@ class Sala{
     - andar: Integer
     - unidade_saude: Unidade_saude 
     + constructor(numero_sala, andar, unidade_saude)
+    + verificar_agenda(self)
+    + agendar_vacina(self)
 }
 
 class Agenda{
@@ -33,6 +35,8 @@ Class Vacina{
     - disponibilidade: boolean
     - agenda: Agenda
     + constructor(id_vacina, nomeVacina, tipo, dose, disponibilidade, agenda)
+    + get_nome(self)
+    + set_nomeVacina(nomeVacina)
 }
 
 class Pessoa{
@@ -48,13 +52,13 @@ class CadastroPaciente {
     - endereco: String
     - pessoa: Pessoa
     + constructor(cpf, email, endereco, pessoa)
+    + validarCadastro(cpf)
 }
 
 class Enfermeiro {
     - registro: String
     - pessoa: Pessoa
-    - agenda: Agenda
-    + constructor(registro, pessoa, agenda )
+    + constructor(registro, pessoa)
 }
 
 class MarcacaoVacina{
