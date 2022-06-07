@@ -11,5 +11,8 @@ class UnidadeSaude():
     def get_endereco(self):
         return self._endereco
 
+    def get_telefone(self):
+        return self._telefone
+
 unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
 
