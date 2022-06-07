@@ -6,12 +6,14 @@ class Vacina:
         self._dose = dose
         self._disponibilidade = disponibilidade
     
-    @property
+    
     def get_nome_vacina(self):
         return self._nomeVacina
 
-    @property
     def set_nome_vacina(self, nomeVacina):
         self._nomeVacina = nomeVacina
+
+    def get_tipo(self):
+        return self._tipo
 
 v1 = Vacina(1, "Vacina Pasrao", "viral", "dose unica", True)
