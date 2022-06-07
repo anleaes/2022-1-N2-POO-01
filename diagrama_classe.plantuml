@@ -76,6 +76,8 @@ class MarcacaoVacina{
     - CadastroPaciente: CadastroPaciente
     - Agenda: Agenda
     + construtor(id_marcacao, CadastroPaciente, Agenda)
+    + get_id(id_marcacao)
+    + set_id(id_marcacao)
 }
 
 Pessoa <|--> CadastroPaciente
