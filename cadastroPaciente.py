@@ -13,5 +13,10 @@ class CadastroPaciente(Pessoa):
         else:
             print("Cadastro realizado com sucesso")
 
+    def get_email(self):
+        return self._email
 
-pc = CadastroPaciente(1234, "poa, ", "teste", "thony", 28, "980631415")
+
+pc = CadastroPaciente(1234, "poa, ", "teste@teste.com", "thony", 28, "980631415")
+print(pc)
+print(pc.get_email())
