@@ -8,6 +8,12 @@ class Unidade_saude{
     - telefone: String
     - cnpj: String
     + constructor(nome, endereco, telefone, cnpj)
+    + get_nome(nome)
+    + get_endereco(endereco)
+    + get_telefone(telefone)
+    + get_cnpj(cnpj)
+    + set_nome(nome)
+    + set_telefone(telefone)
 }
 
 class Sala{
