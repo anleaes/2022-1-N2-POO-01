@@ -48,6 +48,12 @@ class Pessoa{
     - idade: Number
     - telefone: String
     + constructor(nome, idade, telefone)
+    + get_nome(nome)
+    + get_idade(idade)
+    + get_telefone(telefone)
+    + set_nome(nome)
+    + set_idade(idade)
+    + set_telefone(telefone)
 }
 
 class CadastroPaciente {
