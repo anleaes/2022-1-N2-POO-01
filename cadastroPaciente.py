@@ -19,8 +19,17 @@ class CadastroPaciente(Pessoa):
     def get_endereco(self):
         return self._endereco
 
+    def set_email(self, email):
+        self._email = email
+
+
 
 pc = CadastroPaciente(1234, "Rua tal, 122 ", "teste@teste.com", "thony", 28, "980631415")
 print(pc)
+print(pc.get_email())
+print(pc.get_endereco())
+print('-----------------------')
+print('')
+pc.set_email('email@email.com')
 print(pc.get_email())
 print(pc.get_endereco())
