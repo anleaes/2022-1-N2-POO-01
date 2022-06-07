@@ -50,6 +50,7 @@ class CadastroPaciente {
     - endereco: String
     - pessoa: Pessoa
     + constructor(cpf, email, endereco, pessoa)
+    + validarCadastro(cpf)
 }
 
 class Enfermeiro {
