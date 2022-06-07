@@ -16,3 +16,6 @@ class Agenda(Vacina):
             return print(f'Vacina {self._vacina} disponivel para o dia ...')
         else:
             return print(f'A vacina não está disponível no momento.')
+
+    def get_horario(self):
+        return self._hora
