@@ -24,7 +24,7 @@ class Sala:
     def set_unidadeSaude(self, unidade_saude):
         self._unidade_saude = unidade_saude
         
-    
+
 
 
 
