@@ -14,7 +14,16 @@ class Sala:
     def get_unidadeSaude(self):
         return self._unidade_saude
 
+    def set_numeroSala(self, numero_sala):
+        self._numero_sala = numero_sala
+
 sala1 = Sala(1,2, "unidade1")
 print(sala1.get_numeroSala())
 print(sala1.get_andar())
 print(sala1.get_unidadeSaude())
+
+print('------------------------')
+print('')
+
+sala1.set_numeroSala(105)
+print(sala1.get_numeroSala())
