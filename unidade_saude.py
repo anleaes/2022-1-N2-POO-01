@@ -17,5 +17,8 @@ class UnidadeSaude():
     def get_cnpj(self):
         return self._cnpj
 
+    def set_nome(self, nome):
+        self._nome = nome
+
 unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
 
