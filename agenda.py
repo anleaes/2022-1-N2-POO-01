@@ -24,9 +24,6 @@ class Agenda:
     def set_horario(self, hora):
         self._hora = hora
 
-unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
-sala1 = Sala(10, 2, unidade1)
-vacina1 = Vacina(180, "Clozapina", "viral", "dose unica", True)
-agenda1 = Agenda("10:30", sala1, vacina1)
+
 
 

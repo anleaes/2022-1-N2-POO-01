@@ -22,4 +22,4 @@ class Pessoa:
     def set_telefone(self, telefone):
         self._telefone = telefone
 
-p1 = Pessoa("Marco", 25, "980465784")
+

@@ -27,5 +27,5 @@ class CadastroPaciente(Pessoa):
 
 
 
-pc = CadastroPaciente(1234, "Rua tal, 122 ", "teste@teste.com", "thony", 28, "980631415")
+
 
