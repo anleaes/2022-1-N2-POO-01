@@ -3,8 +3,9 @@ from vacina import Vacina
 from unidade_saude import UnidadeSaude
 
 class Agenda():
-    def __init__(self, hora, sala, vacina):
+    def __init__(self, hora, data, sala, vacina):
         self._hora = hora
+        self._data = data
         self._sala = sala
         self._vacina = vacina
         
