@@ -8,10 +8,7 @@ from enfermeiro import Enfermeiro
 class MarcacaoVacina:
     def __init__(self, idMarcacao, cadastro_paciente, agenda, enfermeiro):
        self._idMarcacao = idMarcacao
-       self._cadastro_paciente = cadastro_paciente
-       self._agenda = agenda
-       self._enfermeiro = enfermeiro
-    
+
     def get_id(self):
         return self._idMarcacao
 
