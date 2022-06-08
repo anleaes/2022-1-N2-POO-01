@@ -1,37 +1,29 @@
 from sala import Sala
 from vacina import Vacina
-from unidade_saude import UnidadeSaude
 
-class Agenda:
-    def __init__(self, hora, sala, vacina):
+class Agenda():
+    def __init__(self, hora, data, sala, vacina):
         self._hora = hora
+        self._data = data
         self._sala = sala
         self._vacina = vacina
         
     @property
-    def get_verificar_horario(self):
-        return self._hora
+    def get_informar_horario(self):
+        return print(f" Hora: {self._hora}")
 
-    @get_verificar_horario.setter
+    @get_informar_horario.setter
     def set_horario(self, hora):
         self._hora = hora
-
+        
     @property
-    def get_verificar_sala(self):
-        return self._sala
+    def get_informar_data(self):
+        return print(f" Hora: {self._data}")
 
-    @get_verificar_sala.setter
-    def set_sala(self, sala):
-        self._sala = sala
-
-    def agendar_vacina(self):
-        if self._vacina is not False:
-            return print(f'Vacina {self._vacina} disponivel para o dia ...')
-        else:
-            return print(f'A vacina não está disponível no momento.')
-
-
-
-
+    @get_informar_horario.setter
+    def set_data(self, data):
+        self._data = data
+   
+   
 
 

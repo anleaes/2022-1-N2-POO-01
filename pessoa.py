@@ -6,7 +6,7 @@ class Pessoa:
 
     @property
     def get_nome(self):
-        return self._nome
+        return print(f"Nome: {self._nome}")
 
     @get_nome.setter
     def set_nome(self, nome):
@@ -14,7 +14,7 @@ class Pessoa:
 
     @property
     def get_idade(self):
-        return self._idade
+        return print(f"Idade: {self._idade}")
 
     @get_idade.setter
     def set_idade(self, idade):
@@ -22,7 +22,7 @@ class Pessoa:
 
     @property
     def get_telefone(self):
-        return self._telefone
+        return print(f"Telefone: {self._telefone}")
 
     @get_telefone.setter
     def set_telefone(self, telefone):

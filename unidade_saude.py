@@ -7,7 +7,7 @@ class UnidadeSaude():
 
     @property
     def get_nome(self):
-        return self._nome
+        return print(f"Nome: {self._nome}")
 
     @property
     def get_endereco(self):
@@ -15,7 +15,7 @@ class UnidadeSaude():
 
     @property
     def get_telefone(self):
-        return self._telefone
+        return print(f"Telefone: {self._telefone}")
 
     @get_telefone.setter
     def set_telefone(self, telefone):

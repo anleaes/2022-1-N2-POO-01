@@ -8,17 +8,15 @@ class Sala:
         
     @property
     def get_numero_sala(self):
-        return self._numero_sala
+        return print(f"Numero da sala: {self._numero_sala}")
 
     @property
     def get_andar(self):
-        return self._andar
+        return print(f"Andar: {self._andar}")
 
-    @property
-    def get_unidade_saude(self):
-        return self._unidade_saude
+   
 
-s1 = Sala(1, 2, 'unidade1')
+
 
         
 
