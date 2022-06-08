@@ -14,4 +14,4 @@ class Enfermeiro(Pessoa):
         self._registro = registro
 
 
-enf= Enfermeiro(102, "thony", 28, "980546478")
+
