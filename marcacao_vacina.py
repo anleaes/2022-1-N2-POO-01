@@ -27,7 +27,7 @@ enf= Enfermeiro(102, "thony", 28, "980546478")
 unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
 sala1 = Sala(10, 2, unidade1)
 vacina1 = Vacina(180, "Clozapina", "viral", "dose unica", True)
-agenda1 = Agenda("10:30", sala1, vacina1)
+agenda1 = Agenda("10:30", "08/06/2022", sala1, vacina1)
 Mconsulta = MarcacaoVacina(10, cPaciente, agenda1, enf)
 
 #execução dos metodos
