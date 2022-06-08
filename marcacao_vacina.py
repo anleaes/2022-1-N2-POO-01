@@ -13,7 +13,7 @@ class MarcacaoVacina:
        self._enfermeiro = enfermeiro
 
     def get_id(self):
-        return self._idMarcacao
+        return print(f"ID: {self._idMarcacao}")
 
     def validar_paciente(self, cadastro_paciente):
         if self._cadastro_paciente == cadastro_paciente:
@@ -32,5 +32,9 @@ Mconsulta = MarcacaoVacina(10, cPaciente, agenda1, enf)
 
 #execução dos metodos
 Mconsulta.validar_paciente(cPaciente)
-print(Mconsulta._agenda._sala.get_numero_sala)
+Mconsulta._agenda._sala.get_andar
+Mconsulta._agenda.get_informar_data
+Mconsulta._agenda.get_informar_horario
+Mconsulta._agenda._sala.get_andar
+Mconsulta._agenda._sala.get_numero_sala
 
