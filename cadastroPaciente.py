@@ -29,4 +29,17 @@ class CadastroPaciente(Pessoa):
     def set_endereco(self, endereco):
         self._endereco = endereco
 
+    @property
+    def get_nome(self):
+        return print(f"Nome: {self._nome}")
 
+cPaciente =  CadastroPaciente("03232588409", "Poa", "teste@teste.com", "Josiclei Judison", 30, "32178009")
+cPaciente.get_nome
+cPaciente.get_email
+cPaciente.get_idade
+cPaciente.get_telefone
+cPaciente.get_endereco
+cPaciente.set_email = "Josiclei.judison@email.com"
+cPaciente.get_email
+print()
+cPaciente.validarCadastro(cPaciente._cpf)
