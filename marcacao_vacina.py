@@ -12,9 +12,9 @@ class MarcacaoVacina:
        self._agenda = agenda
        self._enfermeiro = enfermeiro
 
-
     def get_id(self):
         return self._idMarcacao
+
 
 cPaciente =  CadastroPaciente("03232588409", "Poa", "teste@teste.com", "Josiclei Judison", 30, "32178009")
 enf= Enfermeiro(102, "thony", 28, "980546478")
