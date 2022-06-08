@@ -15,7 +15,7 @@ class CadastroPaciente(Pessoa):
 
     @property
     def get_email(self):
-        return self._email
+        return print(f"Email: {self._email}")
     
     @get_email.setter
     def set_email(self, email):
@@ -23,7 +23,7 @@ class CadastroPaciente(Pessoa):
 
     @property
     def get_endereco(self):
-        return self._endereco
+        return print(f"Endereço: {self._endereco}")
 
     @get_endereco.setter
     def set_endereco(self, endereco):

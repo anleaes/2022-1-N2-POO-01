@@ -9,21 +9,23 @@ class Vacina:
     
     @property
     def get_nome_vacina(self):
-        return self._nomeVacina
+        return print(f"Nome da vacina: {self._nomeVacina}")
 
     @property
     def get_tipo(self):
-        return self._tipo
+        return print(f"Tipo da Vacina: {self._tipo}")
 
     @property
     def get_dose(self):
-        return self._dose
+        return print(f"Dose: {self._dose}")
 
     @property
     def get_disponibilidade(self):
-        return self._disponibilidade
+        return print(f"{self._disponibilidade} = verdade")
 
     @get_disponibilidade.setter
     def set_disponibilidade(self, disponibilidade):
         self._disponibilidade = disponibilidade
+
+
 
