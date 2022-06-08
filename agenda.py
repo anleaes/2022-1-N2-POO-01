@@ -1,12 +1,13 @@
+from sala import Sala
 from vacina import Vacina
+from unidade_saude import UnidadeSaude
 
-class Agenda(Vacina):
+class Agenda:
     def __init__(self, hora, sala, vacina):
-        super().__init__(vacina)
         self._hora = hora
         self._sala = sala
         self._vacina = vacina
-
+        
     def verificar_agenda(self):
         print(self._hora)
         print(self._sala)
@@ -22,3 +23,10 @@ class Agenda(Vacina):
 
     def set_horario(self, hora):
         self._hora = hora
+
+unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
+sala1 = Sala(10, 2, unidade1)
+vacina1 = Vacina(180, "Clozapina", "viral", "dose unica", True)
+agenda1 = Agenda("10:30", sala1, vacina1)
+
+
