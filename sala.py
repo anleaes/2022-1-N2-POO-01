@@ -18,7 +18,7 @@ class Sala:
     def get_unidade_saude(self):
         return self._unidade_saude
 
-s1 = Sala(1, 2, 'unidade1')
+
 
         
 
