@@ -8,9 +8,21 @@ class Agenda:
         self._sala = sala
         self._vacina = vacina
         
-    def verificar_agenda(self):
-        print(self._hora)
-        print(self._sala)
+    @property
+    def get_verificar_horario(self):
+        return self._hora
+
+    @get_verificar_horario.setter
+    def set_horario(self, hora):
+        self._hora = hora
+
+    @property
+    def get_verificar_sala(self):
+        return self._sala
+
+    @get_verificar_sala.setter
+    def set_sala(self, sala):
+        self._sala = sala
 
     def agendar_vacina(self):
         if self._vacina is not False:
@@ -18,15 +30,8 @@ class Agenda:
         else:
             return print(f'A vacina não está disponível no momento.')
 
-    def get_horario(self):
-        return self._hora
 
-    def set_horario(self, hora):
-        self._hora = hora
 
-unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
-sala1 = Sala(10, 2, unidade1)
-vacina1 = Vacina(180, "Clozapina", "viral", "dose unica", True)
-agenda1 = Agenda("10:30", sala1, vacina1)
+
 
 
