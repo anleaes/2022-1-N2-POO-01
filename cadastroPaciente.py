@@ -29,9 +29,4 @@ class CadastroPaciente(Pessoa):
     def set_endereco(self, endereco):
         self._endereco = endereco
 
-    @property
-    def get_cpf(self):
-        return self._cpf
-    
-pc = CadastroPaciente(1234, "Rua tal, 122 ", "teste@teste.com", "thony", 28, "980631415")
 

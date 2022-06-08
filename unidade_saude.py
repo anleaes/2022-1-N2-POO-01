@@ -21,9 +21,5 @@ class UnidadeSaude():
     def set_telefone(self, telefone):
         self._telefone = telefone
 
-    @property
-    def get_cnpj(self):
-        return self._cnpj
 
-unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
 

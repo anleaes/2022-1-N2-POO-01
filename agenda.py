@@ -31,7 +31,7 @@ class Agenda:
             return print(f'A vacina não está disponível no momento.')
 
 
-unidade1 = UnidadeSaude("Posto Modelo", "Av. Joao Pessoa", "32175004", "93.044.485-0001")
+
 
 
 
