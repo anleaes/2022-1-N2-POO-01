@@ -13,19 +13,20 @@ class CadastroPaciente(Pessoa):
         else:
             print("Cadastro realizado com sucesso")
 
+    @property
     def get_email(self):
         return self._email
-
-    def get_endereco(self):
-        return self._endereco
-
+    
+    @get_email.setter
     def set_email(self, email):
         self._email = email
 
+    @property
+    def get_endereco(self):
+        return self._endereco
+
+    @get_endereco.setter
     def set_endereco(self, endereco):
         self._endereco = endereco
 
-
-
-pc = CadastroPaciente(1234, "Rua tal, 122 ", "teste@teste.com", "thony", 28, "980631415")
 
