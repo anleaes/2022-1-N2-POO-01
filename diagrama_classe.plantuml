@@ -31,13 +31,14 @@ class Sala{
 
 class Agenda{
     - hora: String
+    - data: String
     - sala: Sala
     - vacina: Vacina
-    + constructor(hora, sala, vacina)
-    + verificar_agenda(hora, sala)
-    + agendar_vacina(vacina)
-    + get_horario(hora)
+    + constructor(hora, data, sala, vacina)
+    + get_informar_horario(hora)
     + set_horario(hora)
+    + get_informar_data(data)
+    + set_data(data)
 }
 
 
