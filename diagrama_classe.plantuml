@@ -66,10 +66,10 @@ class Pessoa{
     - telefone: String
     + constructor(nome, idade, telefone)
     + get_nome(nome)
-    + get_idade(idade)
-    + get_telefone(telefone)
     + set_nome(nome)
+    + get_idade(idade)
     + set_idade(idade)
+    + get_telefone(telefone)
     + set_telefone(telefone)
 }
 
