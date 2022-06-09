@@ -12,7 +12,6 @@ class Unidade_saude{
     + get_endereco(endereco)
     + get_telefone(telefone)
     + get_cnpj(cnpj)
-    + set_nome(nome)
     + set_telefone(telefone)
 }
 
