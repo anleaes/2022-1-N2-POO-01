@@ -99,9 +99,10 @@ class MarcacaoVacina{
     - id_marcacao: Integer
     - CadastroPaciente: CadastroPaciente
     - Agenda: Agenda
+    - Enfermeiro: Enfermeiro
     + construtor(id_marcacao, CadastroPaciente, Agenda)
     + get_id(id_marcacao)
-    + set_id(id_marcacao)
+    + validar_paciente(CadastroPaciente)
 }
 
 Pessoa <|--> CadastroPaciente
