@@ -20,6 +20,20 @@ class MarcacaoVacina:
             print("Validação efetuada!")
         else:
             print("Dados incompativeis")
+    
+    def agendar_vacina(self):
+        hora = agenda1._hora
+        data = agenda1._data
+        nomeEnf = enf._nome 
+        regEnf = enf._registro
+        vac = agenda1._vacina._nomeVacina
+        vacTipo = agenda1._vacina._tipo
+        vacDose = agenda1._vacina._dose
+        print(f"Vacina agendada para:\nDATA: {data}\nHORA: {hora}")
+        print()
+        print(f"Enfermeiro: {nomeEnf}\nRegistro: {regEnf}")
+        print()
+        print(f"Vacina: {vac}\nTipo:{vacTipo}\nDose: {vacDose}")
         
 #Objetos instanciados para execução do codigo
 cPaciente =  CadastroPaciente("03232588409", "Poa", "teste@teste.com", "Josiclei Judison", 30, "32178009")
@@ -32,9 +46,10 @@ Mconsulta = MarcacaoVacina(10, cPaciente, agenda1, enf)
 
 #execução dos metodos
 Mconsulta.validar_paciente(cPaciente)
+print()
 Mconsulta._agenda._sala.get_andar
 Mconsulta._agenda.get_informar_data
 Mconsulta._agenda.get_informar_horario
-Mconsulta._agenda._sala.get_andar
 Mconsulta._agenda._sala.get_numero_sala
-
+print()
+Mconsulta.agendar_vacina()
