@@ -20,7 +20,7 @@ class Agenda:
     def get_informar_data(self):
         return print(f"Data: {self._data}")
 
-    @get_informar_horario.setter
+    @get_informar_data.setter
     def set_data(self, data):
         self._data = data
     

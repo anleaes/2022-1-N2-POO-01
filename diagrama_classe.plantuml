@@ -12,7 +12,6 @@ class Unidade_saude{
     + get_endereco(endereco)
     + get_telefone(telefone)
     + get_cnpj(cnpj)
-    + set_nome(nome)
     + set_telefone(telefone)
 }
 
@@ -23,21 +22,19 @@ class Sala{
     + constructor(numero_sala, andar, unidade_saude)
     + get_numeroSala(sala)
     + get_andar(andar)
-    + get_unidadeSaude(unidade_saude)
-    + set_numeroSala(numero_sala)
-    + set_andar(andar)
-    + set_unidadeSaude(unidade_saude)
+    
 }
 
 class Agenda{
     - hora: String
+    - data: String
     - sala: Sala
     - vacina: Vacina
-    + constructor(hora, sala, vacina)
-    + verificar_agenda(hora, sala)
-    + agendar_vacina(vacina)
-    + get_horario(hora)
+    + constructor(hora, data, sala, vacina)
+    + get_informar_horario(hora)
     + set_horario(hora)
+    + get_informar_data(data)
+    + set_data(data)
 }
 
 
@@ -47,15 +44,11 @@ Class Vacina{
     - tipo: String
     - dose: Number
     - disponibilidade: boolean
-    - agenda: Agenda
-    + constructor(id_vacina, nomeVacina, tipo, dose, disponibilidade, agenda)
+    + constructor(id_vacina, nomeVacina, tipo, dose, disponibilidade)
     + get_nome_vacina(nomeVacina)
-    + set_nome_vacina(nomeVacina)
     + get_tipo(tipo)
     + get_dose(dose)
     + get_disponibilidade(disponibilidade)
-    + set_tipo(tipo)
-    + set_dose(dose)
     + set_disponibilidade(disponibilidade)
 }
 
@@ -65,10 +58,10 @@ class Pessoa{
     - telefone: String
     + constructor(nome, idade, telefone)
     + get_nome(nome)
-    + get_idade(idade)
-    + get_telefone(telefone)
     + set_nome(nome)
+    + get_idade(idade)
     + set_idade(idade)
+    + get_telefone(telefone)
     + set_telefone(telefone)
 }
 
@@ -80,9 +73,10 @@ class CadastroPaciente {
     + constructor(cpf, email, endereco, pessoa)
     + validarCadastro(cpf)
     + get_email(email)
-    + get_endereco(endereco)
     + set_email(email)
+    + get_endereco(endereco)
     + set_endereco(endereco)
+    + get_nome(nome)
 }
 
 class Enfermeiro {
@@ -97,9 +91,10 @@ class MarcacaoVacina{
     - id_marcacao: Integer
     - CadastroPaciente: CadastroPaciente
     - Agenda: Agenda
+    - Enfermeiro: Enfermeiro
     + construtor(id_marcacao, CadastroPaciente, Agenda)
     + get_id(id_marcacao)
-    + set_id(id_marcacao)
+    + validar_paciente(CadastroPaciente)
 }
 
 Pessoa <|--> CadastroPaciente
