@@ -23,10 +23,7 @@ class Sala{
     + constructor(numero_sala, andar, unidade_saude)
     + get_numeroSala(sala)
     + get_andar(andar)
-    + get_unidadeSaude(unidade_saude)
-    + set_numeroSala(numero_sala)
-    + set_andar(andar)
-    + set_unidadeSaude(unidade_saude)
+    
 }
 
 class Agenda{
