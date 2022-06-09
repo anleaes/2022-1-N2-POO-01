@@ -81,9 +81,10 @@ class CadastroPaciente {
     + constructor(cpf, email, endereco, pessoa)
     + validarCadastro(cpf)
     + get_email(email)
-    + get_endereco(endereco)
     + set_email(email)
+    + get_endereco(endereco)
     + set_endereco(endereco)
+    + get_nome(nome)
 }
 
 class Enfermeiro {
