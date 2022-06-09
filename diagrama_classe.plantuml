@@ -44,15 +44,11 @@ Class Vacina{
     - tipo: String
     - dose: Number
     - disponibilidade: boolean
-    - agenda: Agenda
-    + constructor(id_vacina, nomeVacina, tipo, dose, disponibilidade, agenda)
+    + constructor(id_vacina, nomeVacina, tipo, dose, disponibilidade)
     + get_nome_vacina(nomeVacina)
-    + set_nome_vacina(nomeVacina)
     + get_tipo(tipo)
     + get_dose(dose)
     + get_disponibilidade(disponibilidade)
-    + set_tipo(tipo)
-    + set_dose(dose)
     + set_disponibilidade(disponibilidade)
 }
 
